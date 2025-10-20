@@ -40,7 +40,7 @@ def check_stationarity(**kwargs):
          subject = "Anomaly Detection for %f" % (datetime.today().strftime('%Y-%m-%d'))
          body ="""
          <h3>Hello!</h3>
-         <p>This email was sent from a PythonOperator.</p>
+         <p>Your Model specifications may be incorrect</p>
          <p>Execution date: {0}</p>
          <br></br>
          {1}
