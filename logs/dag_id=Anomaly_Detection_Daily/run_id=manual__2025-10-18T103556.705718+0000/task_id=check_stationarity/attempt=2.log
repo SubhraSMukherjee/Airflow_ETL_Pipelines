@@ -1,0 +1,19 @@
+[2025-10-20T14:37:14.555+0000] {local_task_job_runner.py:123} INFO - ::group::Pre task execution logs
+[2025-10-20T14:37:14.571+0000] {taskinstance.py:2612} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: Anomaly_Detection_Daily.check_stationarity manual__2025-10-18T10:35:56.705718+00:00 [queued]>
+[2025-10-20T14:37:14.580+0000] {taskinstance.py:2612} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: Anomaly_Detection_Daily.check_stationarity manual__2025-10-18T10:35:56.705718+00:00 [queued]>
+[2025-10-20T14:37:14.581+0000] {taskinstance.py:2865} INFO - Starting attempt 2 of 2
+[2025-10-20T14:37:14.615+0000] {taskinstance.py:2888} INFO - Executing <Task(PythonOperator): check_stationarity> on 2025-10-18 10:35:56.705718+00:00
+[2025-10-20T14:37:14.624+0000] {logging_mixin.py:190} WARNING - /home/airflow/.local/lib/python3.12/site-packages/airflow/task/task_runner/standard_task_runner.py:70 DeprecationWarning: This process (pid=2118) is multi-threaded, use of fork() may lead to deadlocks in the child.
+[2025-10-20T14:37:14.626+0000] {standard_task_runner.py:72} INFO - Started process 2134 to run task
+[2025-10-20T14:37:14.624+0000] {standard_task_runner.py:104} INFO - Running: ['airflow', 'tasks', 'run', 'Anomaly_Detection_Daily', 'check_stationarity', 'manual__2025-10-18T10:35:56.705718+00:00', '--job-id', '104', '--raw', '--subdir', 'DAGS_FOLDER/anomaly_detection.py', '--cfg-path', '/tmp/tmp72zobju1']
+[2025-10-20T14:37:14.627+0000] {standard_task_runner.py:105} INFO - Job 104: Subtask check_stationarity
+[2025-10-20T14:37:14.676+0000] {logging_mixin.py:190} WARNING - /home/airflow/.local/lib/python3.12/site-packages/airflow/settings.py:209 DeprecationWarning: The sql_alchemy_conn option in [core] has been moved to the sql_alchemy_conn option in [database] - the old setting has been used, but please update your config.
+[2025-10-20T14:37:14.736+0000] {task_command.py:467} INFO - Running <TaskInstance: Anomaly_Detection_Daily.check_stationarity manual__2025-10-18T10:35:56.705718+00:00 [running]> on host 9a3624a83b26
+[2025-10-20T14:37:14.920+0000] {taskinstance.py:3131} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='airflow' AIRFLOW_CTX_DAG_ID='Anomaly_Detection_Daily' AIRFLOW_CTX_TASK_ID='check_stationarity' AIRFLOW_CTX_EXECUTION_DATE='2025-10-18T10:35:56.705718+00:00' AIRFLOW_CTX_TRY_NUMBER='2' AIRFLOW_CTX_DAG_RUN_ID='manual__2025-10-18T10:35:56.705718+00:00'
+[2025-10-20T14:37:14.922+0000] {taskinstance.py:731} INFO - ::endgroup::
+[2025-10-20T14:37:14.999+0000] {python.py:240} INFO - Done. Returned value was: None
+[2025-10-20T14:37:15.021+0000] {taskinstance.py:340} INFO - ::group::Post task execution logs
+[2025-10-20T14:37:15.022+0000] {taskinstance.py:352} INFO - Marking task as SUCCESS. dag_id=Anomaly_Detection_Daily, task_id=check_stationarity, run_id=manual__2025-10-18T10:35:56.705718+00:00, execution_date=20251018T103556, start_date=20251020T143714, end_date=20251020T143715
+[2025-10-20T14:37:15.124+0000] {local_task_job_runner.py:266} INFO - Task exited with return code 0
+[2025-10-20T14:37:15.191+0000] {taskinstance.py:3900} INFO - 1 downstream tasks scheduled from follow-on schedule check
+[2025-10-20T14:37:15.207+0000] {local_task_job_runner.py:245} INFO - ::endgroup::

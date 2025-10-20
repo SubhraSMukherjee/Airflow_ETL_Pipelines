@@ -1,0 +1,185 @@
+[2025-10-13T15:11:39.672+0000] {local_task_job_runner.py:123} INFO - ::group::Pre task execution logs
+[2025-10-13T15:11:39.684+0000] {taskinstance.py:2612} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: save_cleaned_covid_data.read_clean_save_covid_data manual__2025-10-13T15:11:36.539770+00:00 [queued]>
+[2025-10-13T15:11:39.691+0000] {taskinstance.py:2612} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: save_cleaned_covid_data.read_clean_save_covid_data manual__2025-10-13T15:11:36.539770+00:00 [queued]>
+[2025-10-13T15:11:39.691+0000] {taskinstance.py:2865} INFO - Starting attempt 1 of 1
+[2025-10-13T15:11:39.710+0000] {taskinstance.py:2888} INFO - Executing <Task(PythonOperator): read_clean_save_covid_data> on 2025-10-13 15:11:36.539770+00:00
+[2025-10-13T15:11:39.718+0000] {logging_mixin.py:190} WARNING - /home/airflow/.local/lib/python3.12/site-packages/airflow/task/task_runner/standard_task_runner.py:70 DeprecationWarning: This process (pid=42) is multi-threaded, use of fork() may lead to deadlocks in the child.
+[2025-10-13T15:11:39.719+0000] {standard_task_runner.py:72} INFO - Started process 51 to run task
+[2025-10-13T15:11:39.717+0000] {standard_task_runner.py:104} INFO - Running: ['airflow', 'tasks', 'run', 'save_cleaned_covid_data', 'read_clean_save_covid_data', 'manual__2025-10-13T15:11:36.539770+00:00', '--job-id', '22', '--raw', '--subdir', 'DAGS_FOLDER/fetch_clean_save_covid_data.py', '--cfg-path', '/tmp/tmpx3z3h_x3']
+[2025-10-13T15:11:39.720+0000] {standard_task_runner.py:105} INFO - Job 22: Subtask read_clean_save_covid_data
+[2025-10-13T15:11:39.750+0000] {logging_mixin.py:190} WARNING - /home/airflow/.local/lib/python3.12/site-packages/airflow/settings.py:209 DeprecationWarning: The sql_alchemy_conn option in [core] has been moved to the sql_alchemy_conn option in [database] - the old setting has been used, but please update your config.
+[2025-10-13T15:11:39.800+0000] {task_command.py:467} INFO - Running <TaskInstance: save_cleaned_covid_data.read_clean_save_covid_data manual__2025-10-13T15:11:36.539770+00:00 [running]> on host 576c72728aaa
+[2025-10-13T15:11:39.891+0000] {taskinstance.py:3131} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='airflow' AIRFLOW_CTX_DAG_ID='save_cleaned_covid_data' AIRFLOW_CTX_TASK_ID='read_clean_save_covid_data' AIRFLOW_CTX_EXECUTION_DATE='2025-10-13T15:11:36.539770+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2025-10-13T15:11:36.539770+00:00'
+[2025-10-13T15:11:39.892+0000] {taskinstance.py:731} INFO - ::endgroup::
+[2025-10-13T15:11:40.136+0000] {logging_mixin.py:190} INFO - [
+    {
+        "date": 20210307,
+        "dateChecked": "2021-03-07T24:00:00Z",
+        "death": 515151,
+        "deathIncrease": 842,
+        "hash": "a80d0063822e251249fd9a44730c49cb23defd83",
+        "hospitalized": 776361,
+        "hospitalizedCumulative": 776361,
+        "hospitalizedCurrently": 40199,
+        "hospitalizedIncrease": 726,
+        "inIcuCumulative": 45475,
+        "inIcuCurrently": 8134,
+        "lastModified": "2021-03-07T24:00:00Z",
+        "negative": 74582825,
+        "negativeIncrease": 131835,
+        "onVentilatorCumulative": 4281,
+        "onVentilatorCurrently": 2802,
+        "pending": 11808,
+        "posNeg": 0,
+        "positive": 28756489,
+        "positiveIncrease": 41835,
+        "recovered": null,
+        "states": 56,
+        "total": 0,
+        "totalTestResults": 363825123,
+        "totalTestResultsIncrease": 1170059
+    },
+    {
+        "date": 20210306,
+        "dateChecked": "2021-03-06T24:00:00Z",
+        "death": 514309,
+        "deathIncrease": 1680,
+        "hash": "dae5e558c24adb86686bbd58c08cce5f610b8bb0",
+        "hospitalized": 775635,
+        "hospitalizedCumulative": 775635,
+        "hospitalizedCurrently": 41401,
+        "hospitalizedIncrease": 503,
+        "inIcuCumulative": 45453,
+        "inIcuCurrently": 8409,
+        "lastModified": "2021-03-06T24:00:00Z",
+        "negative": 74450990,
+        "negativeIncrease": 143835,
+        "onVentilatorCumulative": 4280,
+        "onVentilatorCurrently": 2811,
+        "pending": 11783,
+        "posNeg": 0,
+        "positive": 28714654,
+        "positiveIncrease": 60015,
+        "recovered": null,
+        "states": 56,
+        "total": 0,
+        "totalTestResults": 362655064,
+        "totalTestResultsIncrease": 1430992
+    },
+    {
+        "date": 20210305,
+        "dateChecked": "2021-03-05T24:00:00Z",
+        "death": 512629,
+        "deathIncrease": 2221,
+        "hash": "724844c01659d0103801c57c0f72bf8cc8ab025c",
+        "hospitalized": 775132,
+        "hospitalizedCumulative": 775132,
+        "hospitalizedCurrently": 42541,
+        "hospitalizedIncrease": 2781,
+        "inIcuCumulative": 45373,
+        "inIcuCurrently": 8634,
+        "lastModified": "2021-03-05T24:00:00Z",
+        "negative": 74307155,
+        "negativeIncrease": 271917,
+        "onVentilatorCumulative": 4275,
+        "onVentilatorCurrently": 2889,
+        "pending": 12213,
+        "posNeg": 0,
+        "positive": 28654639,
+        "positiveIncrease": 68787,
+        "recovered": null,
+        "states": 56,
+        "total": 0,
+        "totalTestResults": 361224072,
+        "totalTestResultsIncrease": 1744417
+    }
+]
+[2025-10-13T15:11:40.164+0000] {taskinstance.py:3310} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/taskinstance.py", line 767, in _execute_task
+    result = _execute_callable(context=context, **execute_callable_kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/taskinstance.py", line 733, in _execute_callable
+    return ExecutionCallableRunner(
+           ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/utils/operator_helpers.py", line 252, in run
+    return self.func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/baseoperator.py", line 406, in wrapper
+    return func(self, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/operators/python.py", line 238, in execute
+    return_value = self.execute_callable()
+                   ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/operators/python.py", line 256, in execute_callable
+    return runner.run(*self.op_args, **self.op_kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/utils/operator_helpers.py", line 252, in run
+    return self.func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/airflow/dags/fetch_clean_save_covid_data.py", line 62, in access_covid_data
+    cursor.execute("""
+sqlite3.OperationalError: near ")": syntax error
+[2025-10-13T15:11:40.175+0000] {taskinstance.py:1225} INFO - Marking task as FAILED. dag_id=save_cleaned_covid_data, task_id=read_clean_save_covid_data, run_id=manual__2025-10-13T15:11:36.539770+00:00, execution_date=20251013T151136, start_date=20251013T151139, end_date=20251013T151140
+[2025-10-13T15:11:40.193+0000] {taskinstance.py:340} INFO - ::group::Post task execution logs
+[2025-10-13T15:11:40.194+0000] {standard_task_runner.py:124} ERROR - Failed to execute job 22 for task read_clean_save_covid_data (near ")": syntax error; 51)
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/task/task_runner/standard_task_runner.py", line 117, in _start_by_fork
+    ret = args.func(args, dag=self.dag)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/cli/cli_config.py", line 49, in command
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/utils/cli.py", line 115, in wrapper
+    return f(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/cli/commands/task_command.py", line 483, in task_run
+    task_return_code = _run_task_by_selected_method(args, _dag, ti)
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/cli/commands/task_command.py", line 256, in _run_task_by_selected_method
+    return _run_raw_task(args, ti)
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/cli/commands/task_command.py", line 341, in _run_raw_task
+    return ti._run_raw_task(
+           ^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/utils/session.py", line 97, in wrapper
+    return func(*args, session=session, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/taskinstance.py", line 3004, in _run_raw_task
+    return _run_raw_task(
+           ^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/taskinstance.py", line 273, in _run_raw_task
+    TaskInstance._execute_task_with_callbacks(
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/taskinstance.py", line 3158, in _execute_task_with_callbacks
+    result = self._execute_task(context, task_orig)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/taskinstance.py", line 3182, in _execute_task
+    return _execute_task(self, context, task_orig)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/taskinstance.py", line 767, in _execute_task
+    result = _execute_callable(context=context, **execute_callable_kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/taskinstance.py", line 733, in _execute_callable
+    return ExecutionCallableRunner(
+           ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/utils/operator_helpers.py", line 252, in run
+    return self.func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/baseoperator.py", line 406, in wrapper
+    return func(self, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/operators/python.py", line 238, in execute
+    return_value = self.execute_callable()
+                   ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/operators/python.py", line 256, in execute_callable
+    return runner.run(*self.op_args, **self.op_kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/utils/operator_helpers.py", line 252, in run
+    return self.func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/airflow/dags/fetch_clean_save_covid_data.py", line 62, in access_covid_data
+    cursor.execute("""
+sqlite3.OperationalError: near ")": syntax error
+[2025-10-13T15:11:40.215+0000] {local_task_job_runner.py:266} INFO - Task exited with return code 1
+[2025-10-13T15:11:40.231+0000] {taskinstance.py:3900} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2025-10-13T15:11:40.233+0000] {local_task_job_runner.py:245} INFO - ::endgroup::
