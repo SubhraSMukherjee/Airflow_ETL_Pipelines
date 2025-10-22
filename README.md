@@ -1,2 +1,4 @@
-# Airflow_ETL_Pipelines
+## Docker based Airflow Instance
+---
+This repo implements an [Airflow](https://airflow.apache.org/) instance in Docker to prototype running workflows. The project uses the file based [SQLite DB](https://sqlite.org/) (as opposed to a [Postgre DB]) since the project is more for prototyping purposes and not for full scale backend systems  
 
