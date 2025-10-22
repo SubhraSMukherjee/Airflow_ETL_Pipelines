@@ -9,4 +9,4 @@ This repo implements an [Airflow](https://airflow.apache.org/) instance in Docke
 ___
 *Here are details on some of the Workflows:*
 ### Anomaly Detection
-This Workflow reads last n days of Data for a particular metric and creates and notifies Stakeholders of an expected forecast range of the metric for the next 7 days 
+This Workflow reads last **N** days of Data for a particular metric and creates and notifies Stakeholders of an expected forecast range (based on a configurable confidence interval) of the metric for the next 7 days. As the actual data for the metric becomes available, it is compared against the precomputed range everyday and an **Anomaly** is registered if the metric is not between the range 
