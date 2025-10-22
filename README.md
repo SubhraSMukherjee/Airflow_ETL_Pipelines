@@ -32,3 +32,8 @@ This Workflow pings the [Covid Tracking Project](https://covidtracking.com/data/
 
 (*Cleaned Data stored in SQLite DB*)
 ![Page_1](https://github.com/SubhraSMukherjee/Airflow_ETL_Pipelines/blob/main/screenshots/final_cleaned.PNG)
+
+
+___
+### >Initialize SQLite DB & Read SQLite DB
+These are used to setup and read the SQLite DB via airflow. (The init-sqlite powershell script also initilizes the DB but can only be run via the Powershell on Windows)
