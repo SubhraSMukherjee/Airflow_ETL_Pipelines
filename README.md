@@ -23,4 +23,12 @@ The DAG (i.e. workflow) uses an [ARIMAX](https://en.wikipedia.org/wiki/Autoregre
 ___
 
 ### >Save Covid Data
-This Workflow pings the [Covid Tracking Project] APIs to fetch Daily US Covid Data which it cleans and then saves to the Sqlite DB
+This Workflow pings the [Covid Tracking Project](https://covidtracking.com/data/api) APIs to fetch Daily US Covid Data which it cleans and then saves to the Sqlite DB
+
+(*Raw JSON Data received from API*)
+![Page_1](https://github.com/SubhraSMukherjee/Airflow_ETL_Pipelines/blob/main/screenshots/Covid_raw.PNG)
+
+
+
+(*Cleaned Data stored in SQLite DB*)
+![Page_1](https://github.com/SubhraSMukherjee/Airflow_ETL_Pipelines/blob/main/screenshots/final_cleaned.PNG)
