@@ -7,6 +7,27 @@ This repo implements an [Airflow](https://airflow.apache.org/) instance in Docke
 
 ![Page_1](https://github.com/SubhraSMukherjee/Airflow_ETL_Pipelines/blob/main/screenshots/image1.PNG)
 ___
+## Project Structure
+```docker-compose.yml``` : Main Airflow deployment (Scheduler, Webserver, etc.)
+
+
+```Dockerfile```: Custom Airflow image
+
+
+```requirements.txt```: Python dependencies installed
+
+
+```.env```: Environment variables (AIRFLOW_UID, SMTP user.)
+
+
+```dags```: Airflow Dags (Workflows)
+
+
+```db```: Airflow config DB
+
+
+```shared_dbs```: SQLite DB (project user DB)
+___
 *Here are details on some of the Workflows:*
 ### >Anomaly Detection
 This Workflow reads last **N** days of Data for a particular metric and creates of an expected forecast range (based on a configurable confidence interval) of the metric for the next 7 days. As the actual data for the metric becomes available, it is compared against the precomputed range everyday and an **Anomaly** is registered if the metric is not in the range. Stakeholders are **notified** everyday. 
